@@ -2,4 +2,14 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@mixin bold {
+    font-family: 'Roboto Bold', Arial, sans-serif;
+}
 
+@mixin medium {
+    font-family: 'Roboto Medium', Arial, sans-serif;
+}
+
+@mixin regular {
+    font-family: 'Roboto Regular', Arial, sans-serif;
+}

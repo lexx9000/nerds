@@ -11,13 +11,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: $text-font-stack;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #ffffff;
-
-  background-color: #000000;
+  @include regular;
+  color: #283136;
+ 
+  background-color: #fff;
   background-image: url("");
   background-position: top center;
   background-repeat: no-repeat;
@@ -34,3 +31,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+div {
+  border: 1px solid red;
+}
+
+ul {
+  border: 2px solid green;
+}
+
+
