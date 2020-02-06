@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nerds</title>
+</head>
+
+<body class="catalog-page">
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a href="" class="main-header-logo">
+                <img src="img/logo.svg" alt='Nerds' width="368" height="153">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="info.html">Студия</a></li>
+                <li><a href="customers.html">Клиенты</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="shop-navigation">
+                <li class="cart">
+                    <a href="cart.html" class="cart">Корзина</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form action="https://echo.htmlacademy.ru" class="filter" method="get">
+
+                <fieldset>
+                    <legend>Стоимость:</legend>
+
+                    <input type="range" min="0" max="15000" list="rangeList1">
+                    <ul>
+                        <li class="filter-option">
+                            <label for="range-min">От</label>
+                            <input type="text" class="range-input"
+                                name="range-min" value="0" id="range-min">
+                            
+                        </li>
+                        <li class="filter-option">
+                            <label for="range-max">До</label>
+                            <input type="text" class="range-input"
+                                name="range-max" value="15 000" id="range-max">
+                            
+                        </li>
+                    </ul>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input type="radio" class="visually-hidden filter-input filter-input-radio"
+                                name="grid-group" value="adaptive-grid" id="filter-adaptive">
+                            <label for="filter-adaptive">Адаптивная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input type="radio" class="visually-hidden filter-input filter-input-radio"
+                                name="grid-group" value="fix-grid" checked id="filter-fix">
+                            <label for="filter-fix">Фиксированная</label>
+                        </li>
+                        <li class="option">
+                            <input type="radio" class="visually-hidden filter-input filter-input-radio"
+                                name="grid-group" value="retina-grid" id="filter-retina">
+                            <label for="filter-retina">Резиновая</label></li>
+                    </ul>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="slider" id="slider" cheked>
+                            <label for="slider">Слайдер</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="features-block" id="features-block">
+                            <label for="features-block">Блок преимуществ</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="news" id="news" cheked>
+                            <label for="news">Новости</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="gallery" id="gallery">
+                            <label for="gallery">Галерея</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="cart" id="cart">
+                            <label for="cart">Корзина</label></li>
+
+                    </ul>
+                </fieldset>
+
+
+                <button type="submit" class="filter-button button">Показать</button>
+            </form>
+        </section>
+
+        <section class="catalog">
+            <h2 class="visually-hidden">Список шаблонов</h2>
+            <div class="filter-template">
+
+            </div>
+            <ul class="teplate-list">
+                <li class="template item"><img src="img/img-sedona.jpg.jpg" alt="Макет Седона"></li>
+                <li class="template item"><img src="img/img-pink.jpg.jpg" alt="Макет Pink"></li>
+                <li class="template item"><img src="img/img-barbershop.jpg.jpg" alt="Макет Барбершоп"></li>
+                <li class="template item"><img src="img/img-mishka.jpg.jpg" alt="Макет Мишка"></li>
+                <li class="template item"><img src="img/img-aplus.jpg.jpg" alt="Макет Aplus"></li>
+                <li class="template item"><img src="img/img-kvast.jpg.jpg" alt="Макет Крафтовый квас"></li>
+            </ul>
+
+            <ul class="pagination-list">
+                <li class="pagination-item"><a href="#">1</a></li>
+                <li class="pagination-item pagination-item-current"><a>2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">4</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="map">
+            <h2 class="visually-hidden">Карта</h2>
+            <div class="footer-contact-block">
+                <p class="footer-contact-title">NЁRDS DESIGN STUDIO</p>
+                <p class="footer-contact-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <p class="footer-contact-adress">тел. +7 (812) 275-75-75</p>
+                <a href="" class="button">Напишите нам</a>
+            </div>
+        </div>
+
+        <div class="social-buttons">
+            <ul>
+                <li><a href="#" class="social-button">Вконтакте</a></li>
+                <li><a href="#" class="social-button">Фейсбук</a></li>
+                <li><a href="#" class="social-button">Инстаграм</a></li>
+            </ul>
+        </div>
+
+        <div class="social-call">
+            <b class="social-call-title">Давайте дружить, это выгодно!</b>
+            <p class="social-call-description">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
