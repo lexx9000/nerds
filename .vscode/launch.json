@@ -5,13 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "type": "chrome",
             "request": "launch",
-            "name": "Запустить программу",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\121.js"
+            "name": "Launch Chrome localhost",
+            "url": "File:///C:/Users/Tiger/Desktop/JavaScript/index.html",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
